@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+        <head>
+        <title>Determine your skin type </title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap">
+        <link rel="stylesheet" href="skintype.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+            h2 {
+            color: #DB7093; 
+        }
+           
+        </style>
+        </head>
+<body>
+ <nav class="navbar navbar-expand-lg" style="background-color: #DB7093;">
+    <div class="nav-container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white custom-hover" href="question.html">Still struggling? Just e-mail us!</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+ </nav>
+
+    <button class="color-btn" id="changeColorBtn">Change Background Color</button>
+    <script src="button-script.js"> </script>
+        
+     <main>
+            <h2 class="text-center">Skin Types</h2>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-4 col-sm-3">
+                        <div class="card">
+                            <img src="normal.jpg" class="card-img-top" alt="Normal Skin">
+                            <div class="card-body">
+                                <h5 class="card-title">Normal Skin</h5>
+                                <p class="card-text">Normal skin is well-balanced, not too oily or dry. It's smooth with few imperfections.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="oily.jpg" class="card-img-top" alt="Oily Skin">
+                            <div class="card-body">
+                                <h5 class="card-title">Oily Skin</h5>
+                                <p class="card-text">Oily skin is characterized by excess oil production, leading to shine and acne.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="dry.jpg" class="card-img-top" alt="Dry Skin">
+                            <div class="card-body">
+                                <h5 class="card-title">Dry Skin</h5>
+                                <p class="card-text">Dry skin feels tight and rough, often flaking and appearing dull.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="sensitive.jpg" class="card-img-top" alt="Sensitive Skin">
+                            <div class="card-body">
+                                <h5 class="card-title">Sensitive Skin</h5>
+                                <p class="card-text">Sensitive skin is prone to redness and irritation, often reacting to products.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="acne.jpg" class="card-img-top" alt="Acne-Prone Skin">
+                            <div class="card-body">
+                                <h5 class="card-title">Acne-Prone Skin</h5>
+                                <p class="card-text">Acne-prone skin experiences frequent breakouts, requiring special care.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="comby.jpg" class="card-img-top" alt="Combination Skin">
+                            <div class="card-body">
+                                <h5 class="card-title">Combination Skin</h5>
+                                <p class="card-text">Combination skin has both oily and dry areas, typically oily in the T-zone.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h1>Determine Your Skin Type</h1>
+                <form id="quiz-form">
+                    <div class="question">
+                        <p>1. How does your skin feel after washing your face?</p>
+                        <label><input type="radio" name="q1" value="A"> Tight and dry</label><br>
+                        <label><input type="radio" name="q1" value="B"> Fresh and comfortable</label><br>
+                        <label><input type="radio" name="q1" value="C"> Oily and shiny</label><br>
+                    </div>
+                    <div class="question">
+                        <p>2. What do you typically see when looking in the mirror?</p>
+                        <label><input type="radio" name="q2" value="A"> A bit shiny, especially on my forehead and nose.</label><br>
+                        <label><input type="radio" name="q2" value="B"> Some dry patches, but overall normal.</label><br>
+                        <label><input type="radio" name="q2" value="C"> Balanced, no shine or dryness.</label><br>
+                        <label><input type="radio" name="q2" value="D"> Red or irritated spots.</label><br>
+                    </div>
+                    <div class="question">
+                        <p>3. How would you describe your pores?</p>
+                        <label><input type="radio" name="q3" value="A"> Very small or hardly visible</label><br>
+                        <label><input type="radio" name="q3" value="B"> Normal-sized and not noticeable</label><br>
+                        <label><input type="radio" name="q3" value="C"> Enlarged or clogged</label><br>
+                    </div>
+                    <div class="question">
+                        <p>4. Do you experience any reactions to skincare products?</p>
+                        <label><input type="radio" name="q4" value="A"> No, I can use most products without issues</label><br>
+                        <label><input type="radio" name="q4" value="B"> Sometimes, my skin feels irritated</label><br>
+                        <label><input type="radio" name="q4" value="C"> Yes, I have to be very careful with what I use</label><br>
+                    </div>
+                    <div class="question">
+                        <p>5. How does your skin react to the weather?</p>
+                        <label><input type="radio" name="q5" value="A"> It gets dry and flaky in winter</label><br>
+                        <label><input type="radio" name="q5" value="B"> It feels greasy in summer</label><br>
+                        <label><input type="radio" name="q5" value="C"> It stays relatively the same</label><br>
+                    </div>
+                    <button class = "submit" type="submit">Submit</button>
+                </form>
+                <div id="result"></div>
+            </div>
+            
+            <script src="script.js"></script> <!-- Link to your JavaScript file -->
+        </body>
+    
+</html>

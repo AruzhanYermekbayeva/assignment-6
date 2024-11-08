@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ask a Question</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="form-validation.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+        .navbar2 li{
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg " style="background-color: #DB7093;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar2 mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white custom-hover" href="home.html">Back</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+         <div class="container-rating">
+                <div class="post">
+                  <div class="text">Thanks for rating us!</div>
+                  <div class="edit">EDIT</div>
+                </div>
+                <div class="star-widget">
+                  <input type="radio" name="rate" id="rate-5">
+                  <label for="rate-5" class="fas fa-star"></label>
+                  <input type="radio" name="rate" id="rate-4">
+                  <label for="rate-4" class="fas fa-star"></label>
+                  <input type="radio" name="rate" id="rate-3">
+                  <label for="rate-3" class="fas fa-star"></label>
+                  <input type="radio" name="rate" id="rate-2">
+                  <label for="rate-2" class="fas fa-star"></label>
+                  <input type="radio" name="rate" id="rate-1">
+                  <label for="rate-1" class="fas fa-star"></label>
+                  <form action="#">
+                    <div class="textarea">
+                      <textarea cols="30" placeholder="Describe your experience.."></textarea>
+                    </div>
+                    <div class="btn">
+                      <button type="submit">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+        </div>
+        <script src="rating.js"></script>
+        <div class="ask-question">
+        <h1>Ask a Question</h1>
+        <p>Please fill out the form below to submit your question.</p>
+        <form id="questionForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="question">Your Question:</label>
+            <textarea id="question" name="question" required></textarea>
+    
+            <button type="submit">Submit</button>
+            <button type="button" id="resetBtn">Reset</button>
+        </form>
+    </div>
+    <script src = "local_storage.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const resetBtn = document.getElementById('resetBtn');
+            resetBtn.addEventListener('click', function() {
+                document.querySelectorAll('input').forEach(input => input.value = '');
+                document.getElementById('question').value = ''; 
+            });
+        });
+    </script>
+
+    </script>
+</body>
+</html>

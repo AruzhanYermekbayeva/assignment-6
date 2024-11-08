@@ -1,0 +1,221 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Poppins', sans-serif;
+    font-size:x-large;
+    font-weight: 300;
+    background-color: #DB7093	;
+    padding:25px;
+}
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: orangered;
+}
+.ask-question {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+.ask-question, form {
+    box-sizing: border-box;
+}
+
+.ask-question h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ask-question p {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], 
+input[type="email"], 
+textarea {
+    padding: 25px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: auto;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color:#DB7093 ;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #DB7093;
+}
+
+.container {
+  justify-content: center; 
+  align-items: center;
+  display: flex;
+  margin-top: 20px;
+}
+
+.container-rating{
+    width: 400px;
+    background:white;
+    padding: 20px 30px;
+    border: 2.5px solid #DB7093;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .container-rating .post{
+    display: none;
+  }
+  .container-rating .text{
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+  }
+  .container-rating .edit{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .container-rating .edit:hover{
+    text-decoration: underline;
+  }
+  .container-rating .star-widget input{
+    display: none;
+  }
+  .star-widget label{
+    font-size: 40px;
+    color: grey;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+  }
+  input:not(:checked) ~ label:hover,
+  input:not(:checked) ~ label:hover ~ label{
+    color: #fd4;
+  }
+  input:checked ~ label{
+    color: #fd4;
+  }
+  input#rate-5:checked ~ label{
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+  }
+  #rate-1:checked ~ form header:before{
+    content: "I hate it ";
+  }
+  #rate-2:checked ~ form header:before{
+    content: "I don't like it ";
+  }
+  #rate-3:checked ~ form header:before{
+    content: "It is awesome ";
+  }
+  #rate-4:checked ~ form header:before{
+    content: "I like it ";
+  }
+  #rate-5:checked ~ form header:before{
+    content: "I just love it ";
+  }
+  .container form{
+    display: none;
+  }
+  input:checked ~ form{
+    display: block;
+  }
+  form header{
+    width: 100%;
+    font-size: 25px;
+    color: #DB7093;
+    font-weight: 500;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    transition: all 0.2s ease;
+  }
+  form .textarea{
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+  }
+  form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #DB7093;
+    background: white;
+    padding: 10px;
+    font-size: 17px;
+    resize: none;
+  }
+  .textarea textarea:focus{
+    border-color: #DB7093
+  }
+  form .btn{
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+  }
+  form .btn button{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DB7093;
+    outline: none;
+    background: #DB7093;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  form .btn button:hover{
+    background: #DB7093
+  }
+  

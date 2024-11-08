@@ -1,0 +1,188 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: small;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    font-family: 'Poppins', sans-serif;
+    font-size: x-large;
+    font-weight: 300;
+    background-color: #DB7093;
+    padding:55px;
+}
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+.custom-carousel {
+  max-width: 600px; 
+  margin: 0 auto; 
+
+}
+ .carousel-item img {
+  height: 500px; 
+  object-fit: cover; 
+}
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.routines {
+    padding: 20px;
+    background-color:#f9f9f9;
+    border-radius: 10px;
+    max-width: 1920px;
+    margin: 20px auto;
+}
+.tab-content {
+  overflow: auto; 
+  padding: 15px;
+  max-height: 400px;
+}
+
+.card {
+  margin-bottom: 15px; 
+  padding: 10px; 
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+}
+
+
+.routines h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:#DB7093
+}
+
+.routine-container {
+    display: flex;
+    padding:  0 10px;
+}
+
+.routine-item img {
+    width: 200px; 
+    height: auto;
+    border-radius: 8px;
+}
+
+.routine-item h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.container {
+    background-color:#f9f9f9;
+    padding: 20px;
+    width: 300px;
+    overflow: hidden;
+}
+.container2 {
+  background-color: #DB7093;
+  padding: 20px;
+  margin-top: 0;
+}
+h1 {
+    text-align: center;
+}
+
+#taskInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #DB7093;
+    border-radius: 5px;
+    font-size: large;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: pink;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.complete-btn, .delete-btn {
+    margin-left: 10px;
+    cursor: pointer;
+}  
+.tab-pane {
+  margin-top: 25px;
+}
+.skin-type {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.skin-type:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skin-type-button {
+  background-color: #DB7093;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.skin-type-button:hover {
+  background-color: #c36482;
+}
+
+.product-list {
+  list-style-type: none;
+  padding: 0 15px;
+  margin: 10px 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.hidden {
+  max-height: 0;
+}
